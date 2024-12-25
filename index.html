@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mono Design Studio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<header>
+<div class="container">
+  <div class="item"><img src="https://cdn2.steamgriddb.com/logo/19df7cd7b27335f2efe6133c69f7688d.png" alt="blackmesa"></div>
+  <div class="item1">Black Mesa Research Facility</div>
+  <div class="item2">Local Permission Network</div>
+  <div class="item3">Site: Sector C</div>
+  <div class="item4">User: Gordon Freeman</div>
+</div>
+</header>
+<div class="main">
+  <div class="searchbar">
+    <h1 id="mainh1">Search for:</h1>
+    <input type="text" placeholder="Поиск..." id="search-input">
+      <button type="submit" id="submit_btn">Поиск</button>
+    <div class="autosearch">
+      <h4>Automatic Search:</h5>
+    <div class="autosearch_cat"> 
+      <h5 onclick=openTwitch() id="sectorC">Sector C: daily open reports</h5>
+      <h5>Safety precautions</h5>
+      <h5>Employers list</h5>
+    </div> 
+  </div>
+  </div>
+  <div class="textlamb">
+    <img src="hl_logo.png" alt="hl_logo" class="lamblogo">
+    <h3 class="textlamball">NEW H.E.V. MODEL BY LAMBDA COMPLEX</b>
+    <b class="textlamball">Our greatest mind in engineering from Lambda Complex has completed designing new model of Hazardous Environmental Suit №5. Now H.E.V. suits includes new voice assistant and autonomous blood supply system (ABSS). New models of H.E.V. suits will be delievered to all Sectors in 12 hours (excluding Sector H and Sector 12). Full instruction of using H.E.V. suit will be sent on your accounts in 1 hour.</b>
+    <b class="textlamball">Lambda Complex wish you a secure day.</b>
+  </div>
+  <div class="chat">
+    <b class="vox" id="Current">Current Messages and General Information</b>
+    <b class="vox" id="vox_greet">[7:00:03] VOX: Good morning, Black Mesa Personal. Have a great and safe day!</b>
+    <b class="vox" id="vox_geer">[7:05:47] VOX: Dr Geer, report to Administration Sub-Level 3, please</b>
+    <b class="vox" id="kleiner_pizza">[7:11:20] Dr Kleiner: Hey, Gordon! Will you join our breakfast with Eli? Finally, they brought that pizza back in cafe!</b>
+    <b class="vox" id="vox_long">[7:18:35] VOX: Dr Longford, report to Supercooled Laser Laboratory, immediately.</b>
+    <b class="vox" id="vox_cryog">[07:37:32] VOX: Cryogenic Safety Crew, reeport status at 11:00, please.</b>
+  </div>
+  <div class="notif">
+    <h4 id="notif_main">Notifications (2)</h4>
+      <b class="messages" id="notif_radcheck">[SYSTEM]: Dr. Freeman. Please proceed an everyday Radiation Check</b>
+      <b class="messages" id="notif_kleiner">[Dr. Kleiner] sent you a message! View it on your message log screen</b>
+  </div>
+  <div class="job">
+    <img src="us_military.png" alt="US Military logo" class="uslogo">
+    <h2 class="jobtext">WORK WITH YOUR RELATIVES!</h2>
+      <b class="jobtext">Black Mesa Research Facility requires a security guard with official licience and 5 year experience in military. If you have a relative, that is seeking for responsible and highly paid job, contact our mail.</b>
+  </div>
+  <div class="tasks">
+    <h2 id="tasks_main">Current tasks (1 left)</h2>
+    <b class="alltasks" id="tasks_report">Finish D-3145 material report.</b>
+    <b class="alltasks" id="tasks_deadline">Deadline: 07.12.2000 (2 days left)</b>
+  </div>
+</div>
+<footer>
+  <div class="footer_info">
+    <b id="time"></b>
+    <b>Temp. Outside: 89°F</b>
+    <b>Temp. in Sector C: 69°F</b>
+    <b>Report an Issue</b>
+  </div>
+</footer>
+</body>
+</html>
