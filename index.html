@@ -10,7 +10,7 @@
 <body>
 <header>
 <div class="container">
-  <div class="item"><img src="https://cdn2.steamgriddb.com/logo/19df7cd7b27335f2efe6133c69f7688d.png" alt="blackmesa"></div>
+  <div class="item"><img src="https://media1.tenor.com/m/lOOrRXcfdz4AAAAd/games-half-life.gif" alt="blackmesa"></div>
   <div class="item1">Black Mesa Research Facility</div>
   <div class="item2">Local Permission Network</div>
   <div class="item3">Site: Sector C</div>
@@ -37,18 +37,24 @@
     <b class="textlamball">Our greatest mind in engineering from Lambda Complex has completed designing new model of Hazardous Environmental Suit №5. Now H.E.V. suits includes new voice assistant and autonomous blood supply system (ABSS). New models of H.E.V. suits will be delievered to all Sectors in 12 hours (excluding Sector H and Sector 12). Full instruction of using H.E.V. suit will be sent on your accounts in 1 hour.</b>
     <b class="textlamball">Lambda Complex wish you a secure day.</b>
   </div>
-  <div class="chat">
-    <b class="vox" id="Current">Current Messages and General Information</b>
-    <b class="vox" id="vox_greet">[7:00:03] VOX: Good morning, Black Mesa Personal. Have a great and safe day!</b>
-    <b class="vox" id="vox_geer">[7:05:47] VOX: Dr Geer, report to Administration Sub-Level 3, please</b>
-    <b class="vox" id="kleiner_pizza">[7:11:20] Dr Kleiner: Hey, Gordon! Will you join our breakfast with Eli? Finally, they brought that pizza back in cafe!</b>
-    <b class="vox" id="vox_long">[7:18:35] VOX: Dr Longford, report to Supercooled Laser Laboratory, immediately.</b>
-    <b class="vox" id="vox_cryog">[07:37:32] VOX: Cryogenic Safety Crew, reeport status at 11:00, please.</b>
+  <div class="chat" id="chat">
+    <div class="inner_chat">
+      <b class="vox" id="Current">Current Messages and General Information</b>
+      <b class="vox" id="vox_greet">[7:00:03] VOX: Good morning, Black Mesa Personal. Have a great and safe day!</b>
+      <b class="vox" id="vox_geer">[7:05:47] VOX: Dr Geer, report to Administration Sub-Level 3, please</b>
+      <b class="vox" id="kleiner_pizza">[7:11:20] Dr Kleiner: Hey, Gordon! Will you join our breakfast with Eli? Finally, they brought that pizza back in cafe!</b>
+      <b class="vox" id="vox_long">[7:18:35] VOX: Dr Longford, report to Supercooled Laser Laboratory, immediately.</b>
+      <b class="vox" id="vox_cryog">[07:37:32] VOX: Cryogenic Safety Crew, reeport status at 11:00, please.</b>
+      <input type='text' id="chatbox" placeholder="Enter your message...">
+      <button id="chatboxSend">Send</button>
+    </div>
   </div>
   <div class="notif">
     <h4 id="notif_main">Notifications (2)</h4>
+    <div class="inner_notif">
       <b class="messages" id="notif_radcheck">[SYSTEM]: Dr. Freeman. Please proceed an everyday Radiation Check</b>
       <b class="messages" id="notif_kleiner">[Dr. Kleiner] sent you a message! View it on your message log screen</b>
+    </div>
   </div>
   <div class="job">
     <img src="us_military.png" alt="US Military logo" class="uslogo">
@@ -57,8 +63,10 @@
   </div>
   <div class="tasks">
     <h2 id="tasks_main">Current tasks (1 left)</h2>
+   <div class="inner_tasks">
     <b class="alltasks" id="tasks_report">Finish D-3145 material report.</b>
     <b class="alltasks" id="tasks_deadline">Deadline: 07.12.2000 (2 days left)</b>
+  </div>
   </div>
 </div>
 <footer>
@@ -66,7 +74,7 @@
     <b id="time"></b>
     <b>Temp. Outside: 89°F</b>
     <b>Temp. in Sector C: 69°F</b>
-    <b>Report an Issue</b>
+    <b id="report">Report an Issue</b>
   </div>
 </footer>
 </body>
